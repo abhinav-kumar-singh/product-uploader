@@ -1,5 +1,9 @@
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 import { defineConfig } from '@rspack/cli';
 import { rspack } from '@rspack/core';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -52,14 +56,14 @@ export default defineConfig({
   plugins: [
     new rspack.HtmlRspackPlugin({
       template: './public/index.html',
-    }),
+    })
   ],
   optimization: {
     minimizer: [
       new rspack.SwcJsMinimizerRspackPlugin(),
       new rspack.LightningCssMinimizerRspackPlugin({
         minimizerOptions: { targets },
-      }),
+      })
     ],
   },
   experiments: {
