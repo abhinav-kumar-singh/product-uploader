@@ -56,13 +56,13 @@ interface IUseImageUploadReturn {
 
 interface IIMageUploader {
   images: File[];
-  onUpload: (files: File[]) => void;
-  onDelete: (index: number) => void;
+  handleImageUpload: (files: File[]) => void;
+  handleImageDelete: (index: number) => void;
 }
 
 interface IDisplay {
   images: File[];
-  onDelete: (index: number) => void;
+  handleImageDelete: (index: number) => void;
 }
 
 interface IUpload {

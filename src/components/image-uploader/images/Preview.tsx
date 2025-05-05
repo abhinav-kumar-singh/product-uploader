@@ -2,6 +2,7 @@ import React, { JSX } from 'react';
 import { IPreview } from '../../../types/form.type';
 
 import { useEffect, useState } from 'react';
+import { Minimize2 } from 'lucide-react';
 
 const Preview = ({ image, onClose }: IPreview): JSX.Element => {
   const [previewUrl, setPreviewUrl] = useState<string>('');
@@ -23,9 +24,9 @@ const Preview = ({ image, onClose }: IPreview): JSX.Element => {
         />
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 bg-white text-black rounded-full p-2 shadow-md hover:bg-gray-200"
+          className="absolute top-2 right-2 bg-white text-black rounded-full p-2 shadow-md hover:bg-blue-300 focus:ring-blue-500"
         >
-          ✕
+          <Minimize2 />
         </button>
       </div>
     </div>
