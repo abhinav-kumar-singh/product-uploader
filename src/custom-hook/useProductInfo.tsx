@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { IFormState, INotification, IProductData } from '../types/form.type';
+import { IFormState, IProductData } from '../types/form.type';
 import { isValidInput } from '../utils/form-validation';
 
 const useProductInfo = () => {
@@ -12,8 +12,6 @@ const useProductInfo = () => {
     isSubmitting: false,
     isValid: false,
   });
-
-  const [notification, setNotification] = useState<INotification>();
 
   const handleProductDataChange = (data: Partial<IProductData>) => {
     console.log('🚀 ~ handleProductDataChange ~ data:', Object.values(data)[0]);
@@ -29,8 +27,6 @@ const useProductInfo = () => {
     formState,
     setFormState,
     productData,
-    notification,
-    setNotification,
     setProductData,
     handleProductDataChange,
   };
