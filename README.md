@@ -4,11 +4,35 @@ This is a simple and responsive **Product Uploader Page** built using **React**,
 
 ---
 
+## 🏃‍♂️ How to Run the Project
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/abhinav-kumar-singh/product-uploader.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd product-uploader
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+
+---
+
 ## 🚀 Features
 
 - Add product title and description
 - Upload product images via drag-and-drop or file picker (**multiple upload supported**)
-- Image preview and basic validation
+- Image preview and validation
 - Responsive and modern UI using Tailwind CSS
 - Deployed on Netlify
 
@@ -41,7 +65,7 @@ AI tools, primarily **github co-pilot** , **ChatGPT**, were used to support and 
 
 ### 🖱️ Drag-and-Drop Implementation Acceleration
 - **Usage:** Used AI to explore different approaches for handling drag-and-drop uploads in React, particularly how to work with the File API.
-- **Impact:** Helped me quickly validate the core approach. I then built out the full solution, including mobile support, loading states, and image previews — which sped up delivery by about 50%.
+- **Impact:** Helped me quickly validate the core approach. I then built out the full solution, including mobile support, and image previews — which sped up delivery by about 50%.
 
 ### ⚙️ Rspack Configuration
 - **Usage:** Helped scaffold a minimal Rspack setup with performance optimizations and tree-shaking.
