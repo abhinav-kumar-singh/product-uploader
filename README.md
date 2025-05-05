@@ -4,6 +4,13 @@ This is a simple and responsive **Product Uploader Page** built using **React**,
 
 ---
 
+## 📡 Deployment
+
+You can view the live app here:  
+🔗 [https://your-netlify-link.netlify.app](https://products-uploader.netlify.app)
+
+---
+
 ## 🏃‍♂️ How to Run the Project
 
 1. Clone the repository:
@@ -73,13 +80,6 @@ AI tools, primarily **github co-pilot** , **ChatGPT**, were used to support and 
 
 
 > 💡 All AI suggestions were used as references. Every piece of code was reviewed, customized, and integrated with full understanding of its role in the application.
-
----
-
-## 📡 Deployment
-
-You can view the live app here:  
-🔗 [https://your-netlify-link.netlify.app](https://products-uploader.netlify.app)
 
 ---
 
