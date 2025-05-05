@@ -86,8 +86,8 @@ AI tools, primarily **github co-pilot** , **ChatGPT**, were used to support and 
 
 ## 📸 Screenshots
 
-![alt text](<Screenshot 2025-05-05 at 9.22.16 PM.webp>)
-![alt text](<Screenshot 2025-05-05 at 9.20.13 PM.webp>)
+![alt text](<src/assets/Screenshot 2025-05-05 at 9.22.16 PM.webp>)
+![alt text](<src/assets/Screenshot 2025-05-05 at 9.20.13 PM.webp>)
 
 ---
 
