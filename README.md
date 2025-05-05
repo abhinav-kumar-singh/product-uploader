@@ -41,6 +41,7 @@ You can view the live app here:
 - Upload product images via drag-and-drop or file picker (**multiple upload supported**)
 - Image preview and validation
 - Responsive and modern UI using Tailwind CSS
+- Keyboard accessibility supported
 - Deployed on Netlify
 
 ---
