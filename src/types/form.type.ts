@@ -58,6 +58,9 @@ interface IIMageUploader {
   images: File[];
   handleImageUpload: (files: File[]) => void;
   handleImageDelete: (index: number) => void;
+  setNotification: (
+    value: React.SetStateAction<INotification | undefined>,
+  ) => void;
 }
 
 interface IDisplay {

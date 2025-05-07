@@ -30,7 +30,7 @@ function App() {
           Product Uploader
         </h1>
         <form
-          onSubmit={(e) =>
+          onSubmit={(e) =>{
             handleSubmit({
               e,
               images,
@@ -40,6 +40,7 @@ function App() {
               setFormState,
               setNotification,
             })
+          }
           }
         >
           <div className="flex flex-col md:flex-row gap-6">
@@ -54,6 +55,7 @@ function App() {
                 images={images}
                 handleImageUpload={handleImageUpload}
                 handleImageDelete={handleImageDelete}
+                setNotification={setNotification}
               />
             </div>
           </div>

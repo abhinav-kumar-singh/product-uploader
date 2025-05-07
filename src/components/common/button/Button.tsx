@@ -1,6 +1,4 @@
 import React from 'react';
-// import { cn } from '../../../utils/utils';
-// import { IButton } from '../../../types/form.type';
 import { buttonStyles } from './buttonVarients';
 import { cn } from '../../../utils/utils';
 import { IButton } from '../../../types/form.type';
