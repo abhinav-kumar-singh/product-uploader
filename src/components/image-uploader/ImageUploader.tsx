@@ -6,7 +6,7 @@ import Upload from './images/Upload';
 import Content from './images/Content';
 
 const ImageUploader = (props: IIMageUploader): JSX.Element => {
-  const { images, handleImageUpload, handleImageDelete } = props;
+  const { images, handleImageUpload, handleImageDelete,setNotification } = props;
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const dragCounter = useRef(0);
@@ -26,8 +26,15 @@ const ImageUploader = (props: IIMageUploader): JSX.Element => {
   const handleFiles = useCallback(
     (files: File[]) => {
       const imageFiles = files.filter((file) => file.type.startsWith('image/'));
+      const OtherFiles = files.filter((file) => !file.type.startsWith('image/'));
       if (imageFiles.length > 0) {
         handleImageUpload(imageFiles);
+      }
+      if(OtherFiles.length > 0){
+        setNotification({
+          type:'error',
+          message:'please upload only JPG, PNG, GIF file type'
+        })
       }
     },
     [handleImageUpload],

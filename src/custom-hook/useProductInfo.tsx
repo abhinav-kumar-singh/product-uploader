@@ -14,7 +14,6 @@ const useProductInfo = () => {
   });
 
   const handleProductDataChange = (data: Partial<IProductData>) => {
-    console.log('🚀 ~ handleProductDataChange ~ data:', Object.values(data)[0]);
     const updatedData = { ...productData, ...data };
     setProductData(updatedData);
 
